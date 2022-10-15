@@ -39,6 +39,11 @@ nav a {
     color: #727277;
 }
 
+.pagina-atual {
+    text-decoration: underline;
+    text-decoration-color: #39aae1;
+}
+
 nav a:hover {
     background-color: #39aae1;
     color: white;
@@ -133,3 +138,50 @@ nav a:hover {
     padding: 5px;
 }
 
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin: 30px 0 20px 0;
+}
+
+.widget-title-text {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.widget-title-bar {
+    height: 3px;
+    width: 50px;
+    background-color: #39a9e1;
+    margin-top: 10px;
+}
+
+.widget-body {
+    display: flex;
+    justify-content: center;
+}
+
+.iten1, .iten2, .iten3 {
+    background-color: #39a9e1;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
+
+.iten4, .iten5, .iten6 {
+    background-color: #39a9e1;
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+}
