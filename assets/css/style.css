@@ -34,14 +34,13 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding: 15px;
+    padding: 15px 15px 5px 15px;
     text-transform: uppercase;
     color: #727277;
 }
 
 .pagina-atual {
-    text-decoration: underline;
-    text-decoration-color: #39aae1;
+    border-bottom: 2px solid #39aae1;
 }
 
 nav a:hover {
@@ -76,6 +75,8 @@ nav a:hover {
     margin: 0px;
     padding: 0px;
     max-width: 350px;
+    font-size: 35px;
+    
 }
 
 .banner-headline h2 {
@@ -112,11 +113,11 @@ nav a:hover {
 }
 
 .banner-options1-title, .banner-options2-title, .banner-options3-title {
-    font-size: 21px;
+    font-size: 25px;
 }
 
 .banner-options1-desc, .banner-options2-desc {
-    font-size: 12px;
+    font-size: 14px;
     margin: 20px 0;
 }
 
@@ -132,7 +133,7 @@ nav a:hover {
 .banner-options3-line1, .banner-options3-line2, .banner-options3-line3 {
     display: flex;
     justify-content: space-between;
-    font-size: 13px;
+    font-size: 14px;
     margin: 20px 0;
     border-bottom: 0.2px solid white;
     padding: 5px;
@@ -167,7 +168,7 @@ nav a:hover {
     margin-top: 10px;
 }
 
-.widget-body {
+.widget-body-aside1, .widget-body-aside2 {
     display: flex;
     justify-content: center;
 }
@@ -184,4 +185,185 @@ nav a:hover {
     width: 120px;
     height: 120px;
     margin: 20px;
+}
+
+.widget-body-article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article {
+    min-width: 300px;
+    padding: 30px;
+}
+
+article a {
+    text-decoration: none;
+
+}
+
+article .news-data {
+    display: flex;
+}
+
+article .news-posted {
+    background-color: #2b4c99;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments {
+    background-color: #39aae1;
+    color: white;
+    font-size: 12px;
+    padding: 10px;
+}
+
+article .news-img {
+    margin-top: 30px;
+    
+}
+
+article .news-img img {
+    width: 100%;
+    height: auto;
+}
+
+article .news-title {
+    margin: 25px 0;
+    font-size: 23px;
+}
+
+article .news-resume {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.container-footer {
+    width: 990px;
+    flex-direction: column;
+}
+
+.footer-options {
+    display: flex;
+    color: white;
+}
+
+.footer-options1 {
+    padding: 20px;
+    flex: 1;
+    background-color: #39aae1;
+}
+
+.footer-options2 {
+    padding: 20px;
+    flex: 1;
+    background-color: #0079c7;
+}
+
+.footer-options3 {
+    padding: 20px;
+    flex: 1;
+    background-color: #2b4c98;
+}
+
+.footer-options1-title, .footer-options2-title, .footer-options3-title {
+    font-size: 25px;
+}
+
+.footer-sub-options {
+    display: flex;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.footer-sub-options1, .footer-sub-options2, .footer-sub-options3 {
+    padding:  0 20px;
+    flex: 1;
+}
+
+.widget-body-footer {
+    font-size: 14px;
+    color: #5c5c5c;
+    line-height: 20px;
+
+}
+
+.footer-body-footer-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget-body-footer-area1, .widget-body-footer-area2 {
+    flex: 1;
+}
+
+.footer-body-footer-area ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.social-midia {
+    padding: 0;
+}
+
+.social-midia li {
+    display: inline;
+    width: 5px;
+    margin-right: 10px;
+}
+
+.social-midia img {
+    width: 40px;
+}
+
+.latest-posts-list, .latest-tweets-list {
+    padding: 0px;
+    list-style-type: none;
+}
+
+.latest-posts-list li, .latest-tweets-list li {
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+.latest-posts-list a, .latest-tweets-list a {
+    color: #5c5c5c;
+    text-decoration: none;
+}
+
+.latest-posts-list li:before, .latest-tweets-list li:before {
+    content: "\2192";
+}
+
+.widget-body-footer ul p {
+    margin: 0px;
+    font-size: 12px;
+    color: #39a9e1;
+}
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0 10px 0;
+    color: #5c5c5c;
+    font-size: 12px;
+    border-top: 1px solid;
+    height: 40px;
+}
+
+.white {
+    color: white;
+    font-weight: normal;
 }
