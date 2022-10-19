@@ -9,7 +9,7 @@ body {
 header {
     display: flex;
     justify-content: center;
-    height: 120px;
+    height: auto;
 }
 .container {
     display: flex;
@@ -30,6 +30,8 @@ nav ul {
 
 nav li {
     list-style: none;
+    margin: 0 0 10px 0;
+    padding: 5px;
 }
 
 nav a {
@@ -40,11 +42,10 @@ nav a {
 }
 
 .pagina-atual {
-    border-bottom: 2px solid #39aae1;
+    background-color: #39a9e1;
 }
 
-nav a:hover {
-    background-color: #39aae1;
+.pagina-atual a {
     color: white;
 }
 
@@ -370,6 +371,17 @@ footer {
     font-weight: normal;
 }
 
+.menu-mobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+
+.linha {
+    height: 4px;
+    background-color: #39a9e1;
+}
+
 @media (max-width: 690px) {
     body {
         min-width: 392px;
@@ -378,6 +390,8 @@ footer {
     header .container {
         align-items: center;
         padding: 10px;
+        display: flex;
+        flex-direction: row;
     }
 
     .banner-headline {
@@ -421,5 +435,25 @@ footer {
     .footer-sub-options {
         display: flex;
         flex-direction: column;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        padding: 0;
+        background-color: white;
+        width: 100%;
+        margin: 0;
+        min-width: 392px;
+
+    }
+
+    .menu-mobile {
+        display: flex;
+        margin: 20px 0;
+        flex-direction: column;
+        justify-content: space-around;
     }
 }
